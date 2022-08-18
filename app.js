@@ -51,11 +51,12 @@ document.getElementById('verify-pin').addEventListener('click', function() {
     const typeNumberField = document.getElementById('type-number')
     const typeNumber = typeNumberField.value;
     const pinMasses = document.getElementById('pin-success')
+    const inncorrectPin = document.getElementById('pin-failuer')
     if (typeNumber === currentPin) {
 
         pinMasses.style.display = 'block';
     } else {
-        const inncorrectPin = document.getElementById('pin-failuer')
+        // const inncorrectPin = document.getElementById('pin-failuer')
         inncorrectPin.style.display = 'block'
         pinMasses.style.display = 'none'
     }
