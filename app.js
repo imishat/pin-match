@@ -55,6 +55,7 @@ document.getElementById('verify-pin').addEventListener('click', function() {
     if (typeNumber === currentPin) {
 
         pinMasses.style.display = 'block';
+        inncorrectPin.style.display = 'none'
     } else {
         // const inncorrectPin = document.getElementById('pin-failuer')
         inncorrectPin.style.display = 'block'
